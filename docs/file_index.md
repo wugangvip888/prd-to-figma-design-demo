@@ -84,6 +84,8 @@
 | hifi_generation_rules.md | 高保真生成规则 | rules/ | 定义 Figma 高保真设计稿生成规则 | 人工维护 | Flow 08 |
 | hifi_review_rules.md | 高保真审核回填规则 | rules/ | 定义人工审核和设计系统回填规则 | 人工维护 | Flow 09 |
 | harness_rules.md | Harness 校验规则 | rules/ | 定义分步 Gate、Wireframe Preflight、冲突处理和变更沉淀规则 | 人工维护 | 全流程 |
+| （项目级规则子目录） | 项目级规则 | rules/project/ | 存放特定项目的专属规则文件，不跨项目复用 | 人工维护 | 项目级治理 |
+| 360_zhixiao.md | 360 智效项目规则 | rules/project/ | 360 智效项目专属规则占位文件 | 人工维护 | 项目级治理 |
 
 ### Execution
 

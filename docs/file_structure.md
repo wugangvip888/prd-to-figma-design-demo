@@ -58,7 +58,9 @@ prd-to-figma-design/
 │   ├── visual_spec_rules.md（高保真设计指令规则）
 │   ├── hifi_generation_rules.md（高保真生成规则）
 │   ├── hifi_review_rules.md（高保真审核回填规则）
-│   └── harness_rules.md（Harness校验规则）
+│   ├── harness_rules.md（Harness校验规则）
+│   └── project/（项目级规则子目录）
+│       └── 360_zhixiao.md（360智效项目规则）
 │
 ├── execution/（执行层— 步骤，告诉 AI 怎么一步一步做，是操作手册。）
 │   ├── 00_run_full_pipeline.md（全流程执行文档）
