@@ -40,6 +40,7 @@
 | workflow.md | 工作流说明 | docs/ | 记录 PRD → Intent → Priority Map → Layout Spec → Wireframe → Structure Mapping → Design System → Visual Spec → Hi-Fi → Design Layer → Backfill → Layer Naming → Auto Layout 的端到端流程顺序和 Harness Gate | 人工维护 | 文档治理 |
 | process_rules.md | 流程治理规则 | docs/ | 定义 prompts、execution、rules、records、docs 的职责边界和读取顺序 | 人工维护 | 文档治理 |
 | self_check.md | 自检清单 | docs/ | 定义结构、引用、流程、Wireframe / Hi-Fi 尺寸、重跑策略和断点续跑的健康检查项 | 人工维护 | 文档治理 |
+| harness-backlog.md | Harness 待补强检查能力待办清单 | docs/ | 记录后续需要补强的 Harness 检查能力；当前作为待办清单，不影响现有 gate，不随产物重跑清理 | 人工维护 | Harness Gate |
 
 ### Scripts
 
@@ -123,7 +124,6 @@
 | {page_id}.md | 页面 Visual Spec | workspace/visual_specs/ | 记录单个页面的高保真设计指令 | AI 生成 / 人工审核 | Flow 07 |
 | run_xxx.md | 运行记录 | workspace/records/ | 每次执行新增记录，记录输入来源、执行范围、Figma 采样端、线框图输出端、高保真输出端、设计层输出端、输出结果、Frame ID、断点续跑信息、Gate 结果、Figma 后变更和回填结论 | AI 生成 / 自动 Gate 校验 | 全流程 |
 | {run_id}_{gate}_gate.json | Harness Gate JSON | workspace/harness/ | 每个 Gate 的机器校验结果文件，由 harness_check.py 或对应 Figma Gate 脚本生成；缺失时 Gate 视为 BLOCKED | AI / 脚本生成 | Harness Gate |
-| harness-backlog.md | Harness 积压问题记录 | docs/ | 记录跨 run 的 Harness Gate 待处理问题、阻塞原因和跟进状态；清理脚本保留此文件不删除 | 人工维护 | Harness Gate |
 | （暂存 Figma 脚本） | Figma 脚本暂存目录 | workspace/figma_scripts/ | 暂存用于特定 run 的临时 Figma 操作脚本；当前为空目录，脚本不纳入版本跟踪 | 按需存放 | 临时使用 |
 | {run_id}/ | 旧产物归档 | workspace/archive/ | 按需保存从零重跑前移出的旧阶段产物，records 不随产物归档移动 | 人工维护 | 重跑归档 |
 | README.md | 工作区说明 | workspace/ | 说明 workspace 目录用途 | 人工维护 | 文档治理 |

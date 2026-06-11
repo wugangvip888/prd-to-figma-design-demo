@@ -35,6 +35,7 @@ PRD
 ## 执行前请读取
 
 ```text
+CLAUDE.md
 docs/process_rules.md
 docs/workflow.md
 execution/00_run_full_pipeline.md
@@ -63,6 +64,8 @@ rules/hifi_review_rules.md
 rules/autolayout_rules.md
 rules/harness_rules.md
 ```
+
+全部读完后回复"规则加载完成，等待指令"，收到 confirm 之前不做任何操作。
 
 ## 输入
 
