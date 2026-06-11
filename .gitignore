@@ -1,0 +1,29 @@
+.DS_Store
+*.log
+.env
+.env.*
+
+# Local project inputs and generated workflow outputs.
+workspace/PRD/*
+workspace/figma_targets.md
+workspace/intents/*
+workspace/layout_specs/*
+workspace/priority_maps/*
+workspace/structure_mapping/*
+workspace/design_system/*
+workspace/visual_specs/*
+workspace/records/run_*.md
+workspace/harness/*
+workspace/archive/*
+
+# Keep workspace directory placeholders.
+!workspace/PRD/.gitkeep
+!workspace/intents/.gitkeep
+!workspace/layout_specs/.gitkeep
+!workspace/priority_maps/.gitkeep
+!workspace/structure_mapping/.gitkeep
+!workspace/design_system/.gitkeep
+!workspace/visual_specs/.gitkeep
+!workspace/records/.gitkeep
+!workspace/harness/.gitkeep
+!workspace/archive/.gitkeep
