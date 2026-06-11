@@ -86,7 +86,7 @@ Hi-Fi Generation 不得破坏 360 x 780 页面尺寸。
 workspace/records/run_xxx.md 每次新增，不覆盖旧记录。
 只有用户明确要求保留旧版时，才在 Figma 中新建副本或追加版本。
 如果用户选择清理后从 00 重新跑，必须先执行 `python3 scripts/clean_workspace_outputs.py` 查看 dry-run 范围；确认后才能执行 `python3 scripts/clean_workspace_outputs.py --apply`。
-清理脚本不得删除 workspace/PRD、workspace/figma_targets.md、rules、prompts、scripts、execution、workspace/archive、.gitkeep 和 workspace/harness/harness-backlog.md。
+清理脚本不得删除 workspace/PRD、workspace/figma_targets.md、rules、prompts、scripts、execution、workspace/archive、.gitkeep 和 docs/harness-backlog.md。
 清理本地生成产物后，如需完全从零验证，也必须同步清理或覆盖 Figma 输出端旧 Frame，避免新流程误用旧设计结果。
 ```
 

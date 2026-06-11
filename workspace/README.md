@@ -12,4 +12,4 @@
 - `figma_targets.md`：当前项目采样端 Figma 链接优先级列表，以及线框图输出端、高保真输出端和设计层输出端的 Figma 文件链接与 Page 名称；输出端 pageID 可选
 - `records/`：执行记录
 
-清理生成产物时使用仓库根目录下的 `scripts/clean_workspace_outputs.py`。该脚本保留 `PRD/`、`figma_targets.md`、`.gitkeep`、`archive/` 和 `harness/harness-backlog.md`。
+清理生成产物时使用仓库根目录下的 `scripts/clean_workspace_outputs.py`。该脚本保留 `PRD/`、`figma_targets.md`、`.gitkeep`、`archive/` 和 `docs/harness-backlog.md`。

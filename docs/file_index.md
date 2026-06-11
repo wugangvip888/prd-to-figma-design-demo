@@ -26,7 +26,7 @@
 | workspace/records/ | 运行记录目录 | 记录每次执行输入、范围、输出和人工确认 | 已建立，可用清理脚本重置 |
 | workspace/archive/ | 归档目录 | 存放重跑前移出的旧 workspace 阶段产物 | 已建立 |
 | workspace/archive/{run_id}/ | 重跑前旧产物归档 | 按需归档旧 Intent、Priority Map、Layout Spec、Structure Mapping、Design System 和 Visual Spec | 按需建立 |
-| workspace/harness/ | Harness Gate 结果目录 | 存放每次运行的 Gate JSON 结果文件（`{run_id}_{gate}_gate.json`）和 `harness-backlog.md` 待办积压；清理脚本保留 `harness-backlog.md` | 已建立，Gate JSON 可用清理脚本重置 |
+| workspace/harness/ | Harness Gate 结果目录 | 存放每次运行的 Gate JSON 结果文件（`{run_id}_{gate}_gate.json`） | 已建立，Gate JSON 可用清理脚本重置 |
 | workspace/figma_scripts/ | Figma 脚本暂存目录 | 存放临时性 Figma Plugin 脚本或调试脚本；当前为空，按需放入 | 已建立，当前为空 |
 
 ## 文件索引
@@ -49,7 +49,7 @@
 | fetch_placeholder_image_v3.py | 占位图片获取脚本 | scripts/ | 根据关键词获取可用于 Figma 图片填充的占位图片 URL | 人工维护 | Hi-Fi Generation |
 | figma_autolayout_check.py | Figma Auto Layout Harness Gate 机器检测脚本 | scripts/ | 机械检测设计层 page_frame 内所有节点是否已正确设置 Auto Layout，输出 auto_layout gate JSON | 人工维护 | Auto Layout Harness Gate |
 | figma_geometry_check.py | Figma 高保真几何 Harness Gate 检测脚本 | scripts/ | 校验高保真 Frame 几何属性（尺寸、位置）是否符合 Visual Spec 规格，输出 hifi_geometry gate JSON | 人工维护 | Hi-Fi Generation Harness Gate |
-| clean_workspace_outputs.py | workspace 生成产物清理脚本 | scripts/ | 清理上一轮生成产物，保留 PRD、Figma 目标、规则、提示词、脚本、archive、.gitkeep 和 harness-backlog；默认 dry-run，`--apply` 才删除 | 人工维护 | 重跑准备 |
+| clean_workspace_outputs.py | workspace 生成产物清理脚本 | scripts/ | 清理上一轮生成产物，保留 PRD、Figma 目标、规则、提示词、脚本、archive、.gitkeep 和 docs/harness-backlog.md；默认 dry-run，`--apply` 才删除 | 人工维护 | 重跑准备 |
 
 ### Prompts
 
@@ -121,7 +121,7 @@
 | {page_id}.md | 页面 Visual Spec | workspace/visual_specs/ | 记录单个页面的高保真设计指令 | AI 生成 / 人工审核 | Flow 07 |
 | run_xxx.md | 运行记录 | workspace/records/ | 每次执行新增记录，记录输入来源、执行范围、Figma 采样端、线框图输出端、高保真输出端、设计层输出端、输出结果、Frame ID、断点续跑信息、Gate 结果、Figma 后变更和回填结论 | AI 生成 / 自动 Gate 校验 | 全流程 |
 | {run_id}_{gate}_gate.json | Harness Gate JSON | workspace/harness/ | 每个 Gate 的机器校验结果文件，由 harness_check.py 或对应 Figma Gate 脚本生成；缺失时 Gate 视为 BLOCKED | AI / 脚本生成 | Harness Gate |
-| harness-backlog.md | Harness 积压问题记录 | workspace/harness/ | 记录跨 run 的 Harness Gate 待处理问题、阻塞原因和跟进状态；清理脚本保留此文件不删除 | 人工维护 | Harness Gate |
+| harness-backlog.md | Harness 积压问题记录 | docs/ | 记录跨 run 的 Harness Gate 待处理问题、阻塞原因和跟进状态；清理脚本保留此文件不删除 | 人工维护 | Harness Gate |
 | （暂存 Figma 脚本） | Figma 脚本暂存目录 | workspace/figma_scripts/ | 暂存用于特定 run 的临时 Figma 操作脚本；当前为空目录，脚本不纳入版本跟踪 | 按需存放 | 临时使用 |
 | {run_id}/ | 旧产物归档 | workspace/archive/ | 按需保存从零重跑前移出的旧阶段产物，records 不随产物归档移动 | 人工维护 | 重跑归档 |
 | README.md | 工作区说明 | workspace/ | 说明 workspace 目录用途 | 人工维护 | 文档治理 |

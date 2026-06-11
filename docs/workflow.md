@@ -126,7 +126,7 @@ workspace/records/run_xxx.md 每次新增，不覆盖旧记录。
 清理工具为 scripts/clean_workspace_outputs.py。
 默认执行 `python3 scripts/clean_workspace_outputs.py` 只做 dry-run，打印将删除的文件。
 确认范围后执行 `python3 scripts/clean_workspace_outputs.py --apply` 才实际删除。
-清理脚本保留 rules、prompts、scripts、execution、workspace/PRD、workspace/figma_targets.md、workspace/archive、.gitkeep 和 workspace/harness/harness-backlog.md。
+清理脚本保留 rules、prompts、scripts、execution、workspace/PRD、workspace/figma_targets.md、workspace/archive、.gitkeep 和 docs/harness-backlog.md。
 清理脚本删除 workspace/intents、priority_maps、layout_specs、structure_mapping、design_system、visual_specs、harness/run_* 和 records/run_* 中的生成文件。
 清理本地生成产物不等于清理 Figma 输出端；如需完全从零验证，也必须同步清理或覆盖 Figma 中线框图、高保真图和设计层输出 Frame。
 ```

@@ -22,7 +22,8 @@ prd-to-figma-design/
 │   ├── harness_check_summary.md（Harness检查汇总）
 │   ├── process_rules.md（流程治理规则）
 │   ├── self_check.md（自检清单）
-│   └── workflow.md（工作流说明）
+│   ├── workflow.md（工作流说明）
+│   └── harness-backlog.md（Harness待补强检查能力待办清单）
 │
 ├── scripts/（脚本层）
 │   ├── clean_workspace_outputs.py（workspace生成产物清理脚本）
@@ -88,7 +89,6 @@ prd-to-figma-design/
 │   ├── visual_specs/（高保真设计指令输出目录）
 │   ├── records/（运行记录目录）
 │   ├── harness/（Harness Gate JSON 输出目录）
-│   │   └── harness-backlog.md（Harness待处理积压问题记录）
 │   ├── figma_scripts/（Figma脚本暂存目录，当前为空）
 │   └── archive/（归档目录）
 ```

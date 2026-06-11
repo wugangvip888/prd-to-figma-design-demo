@@ -22,7 +22,7 @@ GENERATED_DIRS = [
 ]
 
 KEEP_FILES = {
-    WORKSPACE / "harness" / "harness-backlog.md",
+    ROOT / "docs" / "harness-backlog.md",
 }
 
 
@@ -48,7 +48,7 @@ def main() -> int:
         description=(
             "Remove generated workspace outputs before a clean pipeline rerun. "
             "Keeps rules, prompts, scripts, workspace/PRD, workspace/figma_targets.md, "
-            ".gitkeep files, workspace/archive, and workspace/harness/harness-backlog.md."
+            ".gitkeep files, workspace/archive, and docs/harness-backlog.md."
         )
     )
     parser.add_argument(
