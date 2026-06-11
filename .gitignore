@@ -2,6 +2,9 @@
 *.log
 .env
 .env.*
+__pycache__/
+*.pyc
+*.pyo
 
 # Local project inputs and generated workflow outputs.
 workspace/PRD/*
